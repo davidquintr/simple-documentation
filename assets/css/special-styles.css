@@ -1,0 +1,11 @@
+aside::-webkit-scrollbar {
+    width: 2px;
+}
+
+aside::-webkit-scrollbar-track-piece {
+    background: #e5e7eb;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background: #c4c4c4
+}

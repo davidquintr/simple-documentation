@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Documentation</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/expedoc_normal.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+        html{
+            font-family: 'Poppins', 'sans-serif' !important;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/markdown-styles.css">
+    <link rel="stylesheet" href="./assets/css/special-styles.css">
+    <link rel="stylesheet" href="./assets/css/prism.css">
+
+</head>
+<body>
+    <header class="sticky top-0 border-b-2 bg-[#ffffff33] z-20 py-4 flex gap-2 backdrop-blur-[4px]">
+        <div class="max-w-[90rem] mx-auto w-screen px-2">
+            <div class="flex gap-2 items-center">
+                <img loading="lazy" src="./assets/svg/file-icon.svg" alt="expedoc-logo" title="EXPEDOC" class="w-[32px]">
+                <h3 class="text-2xl text-[#454b54] font-bold">Simple Documentation</h3>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-[90rem] px-2 mx-auto sm:flex block gap-4">
+        <aside class="static sm:sticky top-[66px] z-10 sm:h-[calc(100vh_-_66px);] w-full sm:w-[300px] sm:min-w-[300px] bg-[#0000000A] text-[#454b54] p-2 sm:overflow-y-auto">
+            <ul class="text-md flex gap-2 flex-col font-semibold">
+                <li class="">
+                    <a class="w-full flex  items-center p-1 hover:bg-[#0000000A] transition-colors w-full rounded-md" href="introduction">
+                        <i class="fa-solid fa-book-open pr-2 w-6"></i>
+                        <span>Introduction</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="w-full flex items-center p-1 hover:bg-[#0000000A] transition-colors w-full rounded-md" href="rights">
+                        <i class="fa-solid fa-copyright pr-2 w-6"></i>
+                        <span>Open source</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="w-full flex items-center p-1 hover:bg-[#0000000A] transition-colors w-full rounded-md" href="version-log">
+                        <i class="fa-solid fa-code-commit pr-2 w-6"></i>
+                        <span>Version log</span>
+                    </a>
+                </li>
+            </li>
+            </ul>
+            <h3 class="text-xl font-bold pt-2">Examples</h3>
+            <ul class="text-md flex flex-col font-medium">
+                <li class="flex">
+                    <a id="alerta" href="examples_markdown" class="w-full hover:bg-[#0000000A] py-1 transition-colors border-l-4 border-[#0000001A] pl-4">
+                        <span>Markdown</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a id="alerta" href="examples_single-page" class="w-full hover:bg-[#0000000A] py-1 transition-colors border-l-4 border-[#0000001A] pl-4">
+                        <span>Single page</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a id="alerta" href="examples_customizable" class="w-full hover:bg-[#0000000A] py-1 transition-colors border-l-4 border-[#0000001A] pl-4">
+                        <span>Customizable</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a id="alerta" href="examples_multiple-level" class="w-full hover:bg-[#0000000A] py-1 transition-colors border-l-4 border-[#0000001A] pl-4 ml-4">
+                        <span>Multiple level</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a id="alerta" href="examples_native-responsive" class="w-full hover:bg-[#0000000A] py-1 transition-colors border-l-4 border-[#0000001A] pl-4 ml-4">
+                        <span>Native responsive</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a id="alerta" href="examples_fast" class="w-full hover:bg-[#0000000A] py-1 transition-colors border-l-4 border-[#0000001A] pl-4">
+                        <span>Fast</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <article id="text" class="markdown-styles sm:mx-[10px] py-2 sm:min-w-[calc(85%_-_300px)] mb-[5px]">
+
+        </article>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-csharp.min.js"></script>
+    <script src="./assets/js/select.js"></script>
+</body>
+</html>

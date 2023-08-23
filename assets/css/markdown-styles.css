@@ -1,0 +1,122 @@
+.rotate {
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating{
+    0%{transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+
+.markdown-styles h1{
+    color: #454b54;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.markdown-styles h2{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.markdown-styles h3{
+    font-size: large;
+    font-weight: bold;
+}
+
+.markdown-styles a{
+    color: #465aac;
+}
+
+.markdown-styles a:hover{
+    text-decoration: underline;
+}
+
+.markdown-styles h4{
+    font-size: medium;
+    font-weight: 600;
+}
+
+.markdown-styles h5{
+    font-size: medium;
+    font-weight: 500;
+}
+
+.markdown-styles ul{
+    list-style: unset;
+}
+
+.markdown-styles ol{
+    list-style: decimal;
+}
+
+.markdown-styles li{
+    margin-left: 21px;
+    margin-bottom: 6px;
+}
+
+.markdown-styles table {
+    margin-block: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+
+}
+
+.markdown-styles th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+pre{
+    padding: 10px !important;
+}
+
+.markdown-styles code{
+    font-family: 'Fira Code', monospace !important;
+}
+
+.markdown-styles blockquote {
+    margin: 0;
+    padding: 10px 20px;
+    border-left: 3px solid #ccc;
+    font-style: italic;
+  }
+
+.markdown-styles pre{
+    overflow-x: auto;
+}
+
+.markdown-styles p{
+  margin-bottom: 14px;
+}
+
+.markdown-styles pre::-webkit-scrollbar {
+    height: 4px;
+    background-color: hsla(0, 0%, 74%, 0.075);
+}
+
+.markdown-styles pre::-webkit-scrollbar {
+    width: 0;
+    height: 4px;
+}
+
+.markdown-styles pre::-webkit-scrollbar-thumb {
+    background: rgba(102, 102, 102, 0.404);
+}
+
+.markdown-styles code{
+    border-radius: 2px;
+    padding-inline: 2px;
+    background-color: #eeeeee;
+}
+
+.markdown-styles img{
+    margin: auto;
+    border-radius: 5px;
+}
